@@ -1,8 +1,16 @@
 import React from "react";
-import { Navbar } from "../components/navbar/navbar";
-import { MovieCard } from "../components/movieCard/movieCard";
-import { Container } from "../components/movieCard/movieCardStyles";
-import {Mc} from '../components/mc/mc'
+import { Container } from "./mcStyles";
+
+type Props = {};
+
+type Movie = {
+  title: string;
+  link: string;
+  poster: string;
+  genre: string;
+};
+
+type Movies = [Movie];
 
 const movies = [
   {
@@ -70,45 +78,67 @@ const movies = [
     link: "https://in.bookmyshow.com/bengaluru/movies/james/ET00312373",
   },
 ];
-const Homepage = () => {
+
+const Mc = (props: Props) => {
   return (
-    <>
-      <Navbar />
-      <Mc/>
-      {/* <Container>
-        <div className="movies_cont">
-          <div style={{ display: "flex" }}>
-            <div
-              style={{
-                margin: "0px auto 0px 0px",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <div
-                style={{
-                  wordBreak: "break-word",
-                  color: "rgb(51,51,51)",
-                  fontSize: "24px",
-                  fontWeight: "700",
-                  lineHeight: "1.17",
-                  fontFamily: "Roboto",
-                }}
-              >
-                Recommended movies
+    <Container>
+      <div>
+        <div className="outer-wrapper">
+          <div className="main-wrapper">
+            {/* header */}
+            <div className="header">
+              <div className="header-cont">
+                <div className="header-left">
+                  <div className="header-left-div">Recomended Movies</div>
+                </div>
+                <div>
+                  <a href="https://in.bookmyshow.com/explore/movies-bengaluru">
+                    <div className="header-right">See All ›</div>
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="see-all">See All ›</div>
-          </div>
-          <div className="movies_wrapper">
-            {movies.map((el) => (
-              <MovieCard movie={el} />
-            ))}
+
+            {/* main */}
+            <div className="movie-div">
+              <div className="movie-div-div">
+                <div className="movies">
+                  {/* movie */}
+                  {movies.map((movie) => (
+                    <div>
+                      <a className="movie-anchor" href={movie.link}>
+                        <div>
+                          <div className="movie-inner-1"></div>
+                          <div className="movie-inner-2">
+                            <div>
+                              <img
+                                src={movie.poster}
+                                alt={movie.title}
+                                width="100%"
+                                height="100%"
+                              />
+                            </div>
+                          </div>
+                          <div className="movie-inner-3">
+                            <div>
+                              <div>{movie.title}</div>
+                            </div>
+                            <div>
+                              <div>{movie.genre}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </Container> */}
-    </>
+      </div>
+    </Container>
   );
 };
 
-export { Homepage };
+export { Mc };
