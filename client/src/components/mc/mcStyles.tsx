@@ -43,6 +43,7 @@ const Container = styled.div`
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
+    padding: 32px 0px;
   }
 
   .header {

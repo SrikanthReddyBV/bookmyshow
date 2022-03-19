@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "../components/navbar/navbar";
 import { MovieCard } from "../components/movieCard/movieCard";
 import { Container } from "../components/movieCard/movieCardStyles";
-import {Mc} from '../components/mc/mc'
+import { Mc } from "../components/mc/mc";
 
 const movies = [
   {
@@ -74,7 +74,9 @@ const Homepage = () => {
   return (
     <>
       <Navbar />
-      <Mc/>
+      <Mc />
+      <Mc />
+      <Mc />
       {/* <Container>
         <div className="movies_cont">
           <div style={{ display: "flex" }}>
