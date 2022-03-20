@@ -1,7 +1,4 @@
-import React from "react";
 import { Navbar } from "../components/navbar/navbar";
-import { MovieCard } from "../components/movieCard/movieCard";
-import { Container } from "../components/movieCard/movieCardStyles";
 import { Mc } from "../components/mc/mc";
 
 const movies = [
@@ -70,45 +67,85 @@ const movies = [
     link: "https://in.bookmyshow.com/bengaluru/movies/james/ET00312373",
   },
 ];
+
+const events = [
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+  {
+    title: "Sunburn Arena ft. ALAN WALKER - Bengaluru  ",
+    genre: "Venue To Be Announced : Bengaluru",
+    poster:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBBcHI%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00323854-xpamqetghp-portrait.jpg",
+    link: "https://in.bookmyshow.com/events/sunburn-arena-ft-alan-walker-bengaluru/ET00323854",
+  },
+];
 const Homepage = () => {
   return (
     <>
       <Navbar />
-      <Mc />
-      <Mc />
-      <Mc />
-      {/* <Container>
-        <div className="movies_cont">
-          <div style={{ display: "flex" }}>
-            <div
-              style={{
-                margin: "0px auto 0px 0px",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <div
-                style={{
-                  wordBreak: "break-word",
-                  color: "rgb(51,51,51)",
-                  fontSize: "24px",
-                  fontWeight: "700",
-                  lineHeight: "1.17",
-                  fontFamily: "Roboto",
-                }}
-              >
-                Recommended movies
-              </div>
-            </div>
-            <div className="see-all">See All ›</div>
-          </div>
-          <div className="movies_wrapper">
-            {movies.map((el) => (
-              <MovieCard movie={el} />
-            ))}
-          </div>
-        </div>
-      </Container> */}
+      <Mc movies={movies} header="Recomended Movies" />
+      <Mc header="Popular Events" movies={events} />
     </>
   );
 };
